@@ -164,8 +164,8 @@
      // -------------------------------------------------
      CloudT::Ptr map_cloud = GenerateMapCloud();
 
-     Eigen::Quaterniond q_gt =
-         Eigen::AngleAxisd(0.25, Eigen::Vector3d::UnitZ());
+     Eigen::Quaterniond q_gt(
+         Eigen::AngleAxisd(0.25, Eigen::Vector3d::UnitZ()));
      Eigen::Vector3d t_gt(0.6, 0.3, 0.2);
 
      CloudT::Ptr scan_cloud =
